@@ -1,6 +1,6 @@
 fastapi
 uvicorn
 sqlalchemy
-psycopg2-binary
+pymysql
 pyjwt
 bcrypt
