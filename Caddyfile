@@ -1,0 +1,15 @@
+{$DOMAIN} {
+	encode gzip
+	handle /api/auth/* {
+		uri strip_prefix /api/auth
+		reverse_proxy auth:8000
+	}
+	handle /api/* {
+		uri strip_prefix /api
+		reverse_proxy study:8000
+	}
+	handle {
+		root * /srv
+		file_server
+	}
+}
