@@ -1,4 +1,5 @@
-FROM caddy:2-alpine
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80
 
-COPY Caddyfile /etc/caddy/Caddyfile
-COPY web/ /srv/
+
