@@ -1,6 +1,6 @@
 # Fiches : application de révision (V1)
 
-Architecture : gateway Caddy (HTTPS) -> service auth + service study -> PostgreSQL.
+Architecture : gateway Caddy (HTTPS) -> service auth + service study -> MySQL.
 
 ## Lancer en local
     copy .env.example .env      (puis éditer DB_PASSWORD et JWT_SECRET)
